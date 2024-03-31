@@ -17,7 +17,7 @@ body{
   padding: 0 10px;
   min-height: 100vh;
   /* background: #71c7d4e8; */ 
-  background-image: url(/component/timepic.jpg);
+  background-image: url(./component/timepic.jpg);
   background-size: 55%;
   background-position: center;
   
@@ -26,7 +26,7 @@ body{
   width: 440px;
   padding: 30px 30px 38px;
   /* background: rgba(240, 241, 240, 0.972); */
-  background-image: url(/component/light.jpg); 
+  background-image: url(./component/light.jpg); 
   border-radius: 10px;
   flex-direction: column;
   box-shadow: 0 10px 25px rgba(211, 56, 56, 0.1);
