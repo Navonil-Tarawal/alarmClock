@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+
+}
+/* Parent Section */
+body, .wrapper, .content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* page background image and main section */
+body{
+  padding: 0 10px;
+  min-height: 100vh;
+  /* background: #71c7d4e8; */ 
+  background-image: url(/component/timepic.jpg);
+  background-size: 55%;
+  background-position: center;
+  
+}
+.wrapper{
+  width: 440px;
+  padding: 30px 30px 38px;
+  /* background: rgba(240, 241, 240, 0.972); */
+  background-image: url(/component/light.jpg); 
+  border-radius: 10px;
+  flex-direction: column;
+  box-shadow: 0 10px 25px rgba(211, 56, 56, 0.1);
+}
+.wrapper img{
+  max-width: 103px;
+}
+/* time tect section */
+.wrapper h1{
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0;
+}
+.wrapper .content{
+  width: 100%;
+  justify-content: space-between;
+}
+.content.disable{
+  cursor: no-drop;
+}
+.content .column{
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #f0ecec;
+  width: calc(100% / 3 - 5px);
+}
+.content.disable .column{
+  opacity: 0.6;
+  pointer-events: none;
+}
+.column select{
+  width: 100%;
+  height: 53px;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 19px;
+}
+/* button section */
+.wrapper button{
+  width: 100%;
+  border: none;
+  outline: none;
+  color: rgb(7, 1, 1);
+  cursor: pointer;
+  font-size: 20px;
+  padding: 17px 0;
+  margin-top: 20px;
+  border-radius: 25px;
+  background: #c7d9ef;
+}
+
+/* Button hover System (working running)*/
+.btn::before{
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #eb0621, #08f508, #1905f6, #c6f605
+    #2a7c0ccc , #400a2a
+  );
+  position:absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 600%;
+  z-index: -1;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  filter: blur(8px);
+  /* Animation */
+  animation: glowing 20s linear infinite;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+  opacity: 1;
+
+
+}
+@keyframes growing{
+    0%{background-color: 0,0;}
+    50%{background-position: 400% 0;}
+    100%{background-position: 0 0;}
+
+}

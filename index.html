@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>alarmClock</title>
+    <link rel="icon" type="img/ico" href="/component/favicon.ico">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- CSS FILE ADDED -->
+    <link rel="stylesheet" href="style.css">
+
+
+  </head>
+  <body>
+    <!-- parent div -->
+    <div class="wrapper">
+      <img src="./component/3d-alarm.png" alt="clock">
+      <h1>00:00:00 PM</h1>
+      <div class="content">
+        <!-- input hours section -->
+        <div class="column">
+          <select>
+            <option value="Hour" selected disabled hidden>Hour</option>
+          </select>
+        </div>
+        <!-- input minutes section -->
+        <div class="column">
+          <select>
+            <option value="Minute" selected disabled hidden>Minute</option>
+          </select>
+        </div>
+        <!-- input am/pm section -->
+        <div class="column">
+          <select>
+            <option value="AM/PM" selected disabled hidden>AM/PM</option>
+          </select>
+        </div>
+      </div>
+      <!-- alarm button -->
+      <button class="btn">Set Your Alarm</button>
+    </div>
+    <!-- JAVASCRIPT FILR LINK ADDED -->
+    <script src="index.js"></script>
+  </body>
+</html>
