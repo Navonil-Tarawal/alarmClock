@@ -80,7 +80,7 @@ body{
 }
 
 /* Button hover System (working running)*/
-.btn::before{
+/* .btn::before{
   content: "";
   background: linear-gradient(
     45deg,
@@ -96,16 +96,16 @@ body{
   height: calc(100% + 4px);
   filter: blur(8px);
   /* Animation */
-  animation: glowing 20s linear infinite;
+  /* animation: glowing 20s linear infinite;
   transition: opacity .3s ease-in-out;
   border-radius: 10px;
-  opacity: 1;
+  opacity: 1; */
 
 
-}
+/* }
 @keyframes growing{
     0%{background-color: 0,0;}
     50%{background-position: 400% 0;}
     100%{background-position: 0 0;}
 
-}
+} */ 
